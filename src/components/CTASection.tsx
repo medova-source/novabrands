@@ -24,7 +24,7 @@ const CTASection = ({
         <Reveal delay={0.3} className="md:col-span-4 md:text-right">
           <Link
             to="/contact"
-            className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-medium text-ink transition-transform duration-300 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-3 rounded-full bg-[hsl(var(--primary))] px-8 py-4 text-sm font-medium text-white shadow-[0_8px_30px_rgb(0,156,254,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgb(0,156,254,0.4)]"
           >
             Start Your Project <ArrowUpRight className="h-4 w-4" />
           </Link>

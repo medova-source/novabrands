@@ -18,8 +18,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 25% 10%;
 
-    /* Deep charcoal ink — primary brand surface */
-    --primary: 220 28% 12%;
+    /* Sky Blue — primary brand surface */
+    --primary: 203 100% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 14% 96%;
@@ -28,8 +28,8 @@
     --muted: 220 14% 96%;
     --muted-foreground: 220 10% 42%;
 
-    /* Steel-blue accent */
-    --accent: 212 45% 38%;
+    /* Magenta accent */
+    --accent: 332 98% 49%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 45%;
@@ -37,20 +37,20 @@
 
     --border: 220 14% 91%;
     --input: 220 14% 91%;
-    --ring: 212 45% 38%;
+    --ring: 203 100% 50%;
 
     --radius: 0.75rem;
 
     /* Brand-specific tokens */
     --ink: 220 28% 9%;
     --ink-soft: 220 18% 22%;
-    --steel: 212 45% 38%;
-    --steel-glow: 212 60% 52%;
+    --steel: 203 100% 50%;
+    --steel-glow: 332 98% 49%;
     --paper: 30 20% 98%;
     --rule: 220 14% 88%;
 
     --gradient-ink: linear-gradient(180deg, hsl(220 28% 12%) 0%, hsl(220 32% 6%) 100%);
-    --gradient-steel: linear-gradient(135deg, hsl(212 45% 38%) 0%, hsl(212 60% 52%) 100%);
+    --gradient-steel: linear-gradient(135deg, hsl(203 100% 50%) 0%, hsl(332 98% 49%) 100%);
     --gradient-soft: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 96%) 100%);
 
     --shadow-soft: 0 1px 2px hsl(220 28% 12% / 0.04), 0 8px 24px -12px hsl(220 28% 12% / 0.08);

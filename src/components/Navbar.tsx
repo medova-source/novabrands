@@ -87,7 +87,7 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link to="/contact" className={`hidden md:inline-flex btn-primary !py-2.5 !px-5 !text-[13px] ${isDarkNav ? "bg-white text-ink hover:bg-white/90" : ""}`}>
+          <Link to="/contact" className={`hidden md:inline-flex btn-primary !py-2.5 !px-5 !text-[13px] ${isDarkNav ? "bg-[hsl(var(--primary))] text-white hover:bg-[hsl(var(--primary))]/90 shadow-[0_4px_20px_rgb(0,156,254,0.3)]" : "bg-[hsl(var(--primary))] text-white hover:bg-[hsl(var(--primary))]/90"}`}>
             Start Your Project
             <ArrowUpRight className="h-4 w-4" />
           </Link>

@@ -40,6 +40,8 @@ const Index = () => {
         >
           <img src={heroImg} alt="Nova Brands manufacturing facility" className="h-full w-full object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/30 via-ink/40 to-ink" />
+          <div className="absolute -top-1/4 -right-1/4 h-[70%] w-[70%] rounded-full bg-[hsl(var(--primary))] opacity-[0.12] blur-[120px]" />
+          <div className="absolute -bottom-1/4 -left-1/4 h-[60%] w-[60%] rounded-full bg-[hsl(var(--accent))] opacity-[0.1] blur-[100px]" />
         </motion.div>
 
         <div className="container-x relative pt-36 pb-24 md:pt-48 md:pb-32">
@@ -61,10 +63,10 @@ const Index = () => {
                 Nova Brands is an FDA-registered, GMP-certified contract manufacturer building premium gummies, capsules, tablets, powders and liquids — with packaging design and 3PL distribution under one roof.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <Link to="/contact" className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-3.5 text-sm font-medium text-ink transition-transform duration-300 hover:-translate-y-0.5">
+                <Link to="/contact" className="inline-flex items-center gap-3 rounded-full bg-[hsl(var(--primary))] px-7 py-3.5 text-sm font-medium text-white shadow-[0_8px_30px_rgb(0,156,254,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgb(0,156,254,0.4)]">
                   Start Your Product <ArrowUpRight className="h-4 w-4" />
                 </Link>
-                <Link to="/how-we-work" className="inline-flex items-center gap-3 rounded-full border border-white/20 px-7 py-3.5 text-sm font-medium text-white transition-colors hover:border-white/60">
+                <Link to="/how-we-work" className="inline-flex items-center gap-3 rounded-full border border-[hsl(var(--accent))/30] px-7 py-3.5 text-sm font-medium text-white transition-all duration-300 hover:border-[hsl(var(--accent))] hover:bg-[hsl(var(--accent))/10]">
                   How We Work
                 </Link>
               </div>
@@ -85,7 +87,7 @@ const Index = () => {
               ["FDA · cGMP", "Audited & registered"],
             ].map(([n, l]) => (
               <div key={l}>
-                <div className="font-display text-3xl font-semibold tracking-tight text-white md:text-4xl">{n}</div>
+                <div className="bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--accent))] bg-clip-text font-display text-3xl font-semibold tracking-tight text-transparent md:text-4xl">{n}</div>
                 <div className="mt-2 text-[12px] uppercase tracking-[0.18em] text-white/40">{l}</div>
               </div>
             ))}
@@ -129,7 +131,7 @@ const Index = () => {
               <Reveal key={s.title} delay={i * 0.08}>
                 <Link to={s.to} className="card-sharp group flex h-full flex-col p-7">
                   <div className="flex items-start justify-between">
-                    <div className="grid h-11 w-11 place-items-center rounded-xl bg-secondary text-foreground transition-colors duration-500 group-hover:bg-ink group-hover:text-white">
+                    <div className="grid h-11 w-11 place-items-center rounded-xl bg-secondary text-foreground transition-all duration-500 group-hover:bg-[hsl(var(--primary))] group-hover:text-white group-hover:shadow-[0_4px_20px_rgba(0,156,254,0.3)]">
                       <s.icon className="h-5 w-5" />
                     </div>
                     <div className="num-tag">0{i + 1}</div>
