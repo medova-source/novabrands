@@ -30,12 +30,12 @@ const About = () => (
             <p>
               Most contract manufacturers stitch together suppliers, packers and
               warehouses to move a product to market. The result: friction,
-              finger-pointing and lost weeks. We took the opposite approach.
+              finger pointing and lost weeks. We took the opposite approach.
             </p>
             <p>
-              Under one roof, Nova Brands operates an FDA-registered GMP
-              facility, an in-house R&D lab, a packaging design studio and an
-              integrated 3PL. One team owns your timeline from white-board to
+              Under one roof, Nova Brands operates an FDA registered GMP
+              facility, an internal R&D lab, a packaging design studio and an
+              integrated 3PL. One team owns your timeline from whiteboard to
               consumer.
             </p>
             <p>
@@ -69,7 +69,7 @@ const About = () => (
             </h3>
             <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
               A manufacturing platform so reliable, transparent and
-              quality-obsessed that founders never have to think about it twice.
+              quality obsessed that founders never have to think about it twice.
             </p>
           </div>
         </Reveal>
@@ -89,12 +89,12 @@ const About = () => (
             {
               icon: ShieldCheck,
               t: "Quality without exception",
-              d: "Audited cGMP, traceable batch records, third-party finished testing on every run.",
+              d: "Audited cGMP, traceable batch records, independent finished testing on every run.",
             },
             {
               icon: FlaskConical,
-              t: "Real R&D in-house",
-              d: "PhD-led formulation, sensory labs and stability suites — not outsourced contracts.",
+              t: "Real R&D internal",
+              d: "PhD led formulation, sensory labs and stability suites, without outsourced contracts.",
             },
             {
               icon: Globe2,
@@ -103,18 +103,18 @@ const About = () => (
             },
             {
               icon: Award,
-              t: "Founder-friendly MOQs",
-              d: "Designed for ambitious launches — and ready to scale into millions of units.",
+              t: "Founder friendly MOQs",
+              d: "Designed for ambitious launches, and ready to scale into millions of units.",
             },
             {
               icon: ShieldCheck,
               t: "Vetted supply chain",
-              d: "Multi-source ingredient sourcing with rigorous identity, potency and contaminant testing.",
+              d: "Multiple source ingredient sourcing with rigorous identity, potency and contaminant testing.",
             },
             {
               icon: Globe2,
               t: "Speed as a feature",
-              d: "8–10 week timelines from kickoff to commercial — without cutting corners.",
+              d: "8–10 week timelines from kickoff to commercial, without cutting corners.",
             },
           ].map((b) => (
             <Reveal key={b.t}>
@@ -170,7 +170,7 @@ const About = () => (
           {[
             "cGMP 21 CFR 111",
             "NSF Independently Audited",
-            "Organic & Non-GMO Capable",
+            "Organic & Non GMO Capable",
           ].map((c) => (
             <Reveal key={c}>
               <div className="rounded-2xl border border-[hsl(var(--rule))] bg-card p-7">

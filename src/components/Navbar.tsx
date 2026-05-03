@@ -6,11 +6,11 @@ import Logo from "./Logo";
 const customProducts = [
   { to: "/custom-products/new-product-development", label: "New Product Development", desc: "From idea to finished SKU." },
   { to: "/custom-products/custom-manufacturing", label: "Custom Product Manufacturing", desc: "Match or build any formula." },
-  { to: "/custom-products/custom-packaging", label: "Custom Packaging Design", desc: "End-to-end packaging studio." },
+  { to: "/custom-products/custom-packaging", label: "Custom Packaging Design", desc: "Complete packaging studio." },
 ];
 
 const capabilities = [
-  { to: "/manufacturing", label: "Overview", desc: "FDA-registered GMP facility." },
+  { to: "/manufacturing", label: "Overview", desc: "FDA registered GMP facility." },
   { to: "/manufacturing/gummies", label: "Gummies", desc: "Pectin & gelatin formats." },
   { to: "/manufacturing/capsules", label: "Capsules", desc: "Veggie, gel & specialty." },
   { to: "/manufacturing/tablets", label: "Tablets", desc: "Coated, layered, chewable." },
@@ -106,15 +106,15 @@ const Navbar = () => {
           </button>
         </div>
         <div className="container-x grid gap-1 py-6">
-          <div className="num-tag mb-2">01 — Custom Products</div>
+          <div className="num-tag mb-2">01 : Custom Products</div>
           {customProducts.map((i) => (
             <Link key={i.to} to={i.to} className="py-2 text-2xl font-display font-semibold tracking-tight">{i.label}</Link>
           ))}
-          <div className="num-tag mb-2 mt-8">02 — Manufacturing</div>
+          <div className="num-tag mb-2 mt-8">02 : Manufacturing</div>
           {capabilities.map((i) => (
             <Link key={i.to} to={i.to} className="py-2 text-2xl font-display font-semibold tracking-tight">{i.label}</Link>
           ))}
-          <div className="num-tag mb-2 mt-8">03 — Company</div>
+          <div className="num-tag mb-2 mt-8">03 : Company</div>
           <Link to="/distribution" className="py-2 text-2xl font-display font-semibold tracking-tight">3PL Distribution</Link>
           <Link to="/about" className="py-2 text-2xl font-display font-semibold tracking-tight">About</Link>
           <Link to="/how-we-work" className="py-2 text-2xl font-display font-semibold tracking-tight">How We Work</Link>

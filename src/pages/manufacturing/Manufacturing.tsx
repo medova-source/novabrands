@@ -13,12 +13,12 @@ import liquids from "@/assets/cat-liquids.jpg";
 import tablets from "@/assets/cat-tablets.jpg";
 
 const accordion = [
-  { t: "Next-Generation Equipment", d: "High-throughput encapsulators, pectin gummy lines, agglomerators, fluid-bed dryers, automated tablet presses, aseptic liquid fillers and inline vision systems." },
+  { t: "Next Generation Equipment", d: "High throughput encapsulators, pectin gummy lines, agglomerators, fluid bed dryers, automated tablet presses, aseptic liquid fillers and inline vision systems." },
   { t: "High Volume Capacities", d: "Capacity for 180M+ units annually across formats, with surge capability for promotional and seasonal launches." },
-  { t: "Comprehensive Warehousing", d: "Climate-controlled raw material, in-process and finished goods storage with lot-tracked, expiry-aware inventory." },
-  { t: "Highest Levels of Quality", d: "FDA-registered, cGMP 21 CFR 111 & 117 compliant, NSF audited, with third-party finished testing on every batch." },
+  { t: "Comprehensive Warehousing", d: "Climate controlled raw material, in process and finished goods storage with lot tracked, expiry aware inventory." },
+  { t: "Highest Levels of Quality", d: "FDA registered, cGMP 21 CFR 111 & 117 compliant, NSF audited, with independent finished testing on every batch." },
   { t: "Diverse Product Range", d: "Extensive manufacturing capabilities across gummies, capsules, tablets, powders, and liquids to support comprehensive brand portfolios." },
-  { t: "Integrated Supply Chain", d: "Multi-source ingredient strategy, audited vendors and integrated packaging procurement for resilience and speed." },
+  { t: "Integrated Supply Chain", d: "Multiple source ingredient strategy, audited vendors and integrated packaging procurement for resilience and speed." },
 ];
 
 const Manufacturing = () => {
@@ -29,7 +29,7 @@ const Manufacturing = () => {
       <PageHero
         eyebrow="Manufacturing Capabilities"
         title={<>One facility. <br/><span className="text-muted-foreground">Five formats. Zero handoffs.</span></>}
-        description="An FDA-registered, cGMP-certified manufacturing platform with high-capacity production lines, advanced labs and an integrated packaging and 3PL operation."
+        description="An FDA registered, cGMP certified manufacturing platform with high capacity production lines, advanced labs and an integrated packaging and 3PL operation."
         image={facility}
       />
 
@@ -43,7 +43,7 @@ const Manufacturing = () => {
             </Reveal>
             <Reveal delay={0.1} className="md:col-span-7 md:pl-8 lg:pl-16">
               <p className="text-[15px] leading-relaxed text-muted-foreground">
-                Most contract manufacturers either run fast or run clean. Our facility was designed to do both. Five GMP suites, dedicated R&D and microbiology labs, segregated allergen lines and an in-house 3PL — purpose-built so your product never leaves quality oversight from raw material to last-mile.
+                Most contract manufacturers either run fast or run clean. Our facility was designed to do both. Five GMP suites, dedicated R&D and microbiology labs, segregated allergen lines and an internal 3PL, purpose built so your product never leaves quality oversight from raw material to last mile.
               </p>
               <div className="mt-12 grid grid-cols-3 gap-6 border-t border-[hsl(var(--rule))] pt-8">
                 {[["180M+", "Units / yr"], ["120K", "Sq ft GMP"], ["48hr", "QC release"]].map(([n, l]) => (
@@ -96,11 +96,11 @@ const Manufacturing = () => {
         eyebrow="Format Capabilities"
         title="Choose a format. Explore the spec."
         items={[
-          { to: "/manufacturing/gummies", title: "Gummies", description: "Pectin & gelatin systems, low-sugar, sour-coated, custom 3D molds.", image: gummies },
-          { to: "/manufacturing/capsules", title: "Capsules", description: "Vegetarian, gelatin, liquid-fill, beadlet and delayed-release formats.", image: capsules },
+          { to: "/manufacturing/gummies", title: "Gummies", description: "Pectin & gelatin systems, low sugar, sour coated, custom 3D molds.", image: gummies },
+          { to: "/manufacturing/capsules", title: "Capsules", description: "Vegetarian, gelatin, liquid fill, beadlet and delayed release formats.", image: capsules },
           { to: "/manufacturing/tablets", title: "Tablets", description: "Coated, layered, chewable, effervescent and orally disintegrating.", image: tablets },
-          { to: "/manufacturing/powders", title: "Powders", description: "Stick packs, jars, bulk — agglomerated for clean dissolution.", image: powders },
-          { to: "/manufacturing/liquids", title: "Liquids", description: "Tinctures, shots, syrups and dropper-bottle systems.", image: liquids },
+          { to: "/manufacturing/powders", title: "Powders", description: "Stick packs, jars, bulk, agglomerated for clean dissolution.", image: powders },
+          { to: "/manufacturing/liquids", title: "Liquids", description: "Tinctures, shots, syrups and dropper bottle systems.", image: liquids },
         ]}
       />
 

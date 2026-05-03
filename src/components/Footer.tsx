@@ -11,7 +11,7 @@ const Footer = () => {
             <Logo light />
             <p className="mt-6 max-w-md text-[15px] leading-relaxed text-white/60">
               Premium contract manufacturing, custom packaging and integrated
-              3PL distribution — engineered for the world's most ambitious
+              3PL distribution, engineered for the world's most ambitious
               wellness brands.
             </p>
             <Link

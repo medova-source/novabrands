@@ -17,10 +17,10 @@ import packaging from "@/assets/packaging.jpg";
 import rdLab from "@/assets/rd-lab.jpg";
 
 const services = [
-  { icon: Sparkles, title: "New Product Development", desc: "From concept to commercial launch — formula, flavor, format, and proof.", to: "/custom-products/new-product-development" },
+  { icon: Sparkles, title: "New Product Development", desc: "From concept to commercial launch, including formula, flavor, format, and proof.", to: "/custom-products/new-product-development" },
   { icon: Beaker, title: "Custom Product Manufacturing", desc: "Match an existing formula or build something the world has never seen.", to: "/custom-products/custom-manufacturing" },
-  { icon: Boxes, title: "Private Label Stock SKUs", desc: "Fast-to-market, science-backed formulations ready to wear your brand.", to: "/manufacturing" },
-  { icon: Layers, title: "Fully Customizable Packaging", desc: "Bottles, pouches, sticks, cartons — designed and sourced under one roof.", to: "/custom-products/custom-packaging" },
+  { icon: Boxes, title: "Private Label Stock SKUs", desc: "Fast to market, science backed formulations ready to wear your brand.", to: "/manufacturing" },
+  { icon: Layers, title: "Fully Customizable Packaging", desc: "Bottles, pouches, sticks, cartons, all designed and sourced under one roof.", to: "/custom-products/custom-packaging" },
 ];
 
 const Index = () => {
@@ -60,7 +60,7 @@ const Index = () => {
             </div>
             <div className="md:col-span-4">
               <p className="text-[15px] leading-relaxed text-white/70">
-                Nova Brands is an FDA-registered, GMP-certified contract manufacturer building premium gummies, capsules, tablets, powders and liquids — with packaging design and 3PL distribution under one roof.
+                Nova Brands is a GMP certified contract manufacturer building premium gummies, capsules, tablets, powders and liquids, with packaging design and 3PL distribution under one roof.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <Link to="/contact" className="inline-flex items-center gap-3 rounded-full bg-[hsl(var(--primary))] px-7 py-3.5 text-sm font-medium text-white shadow-[0_8px_30px_rgb(0,156,254,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgb(0,156,254,0.4)]">
@@ -163,7 +163,7 @@ const Index = () => {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-muted-foreground">
-                Every Nova Brands product moves through audited checkpoints — raw material identity, in-process verification, third-party finished testing, and traceable batch records.
+                Every Nova Brands product moves through audited checkpoints, including raw material identity, in process verification, independent finished testing, and traceable batch records.
               </p>
             </Reveal>
             <div className="mt-10 grid grid-cols-2 gap-6">
@@ -193,12 +193,12 @@ const Index = () => {
         eyebrow="Manufacturing capabilities"
         title="Five formats. One facility."
         items={[
-          { to: "/manufacturing/gummies", title: "Gummy Manufacturing", description: "Pectin & gelatin, low-sugar systems, sour coatings and 3D molds.", image: gummies },
-          { to: "/manufacturing/capsules", title: "Capsule Manufacturing", description: "Vegetarian, gelatin, liquid-fill and beadlet specialty formats.", image: capsules },
-          { to: "/manufacturing/powders", title: "Powder Manufacturing", description: "Stick packs, jars and bulk — agglomerated for clean dissolution.", image: powders },
-          { to: "/manufacturing/liquids", title: "Liquid Manufacturing", description: "Tinctures, shots, syrups and dropper-bottle systems.", image: liquids },
+          { to: "/manufacturing/gummies", title: "Gummy Manufacturing", description: "Pectin & gelatin, low sugar systems, sour coatings and 3D molds.", image: gummies },
+          { to: "/manufacturing/capsules", title: "Capsule Manufacturing", description: "Vegetarian, gelatin, liquid fill and beadlet specialty formats.", image: capsules },
+          { to: "/manufacturing/powders", title: "Powder Manufacturing", description: "Stick packs, jars and bulk, agglomerated for clean dissolution.", image: powders },
+          { to: "/manufacturing/liquids", title: "Liquid Manufacturing", description: "Tinctures, shots, syrups and dropper bottle systems.", image: liquids },
           { to: "/manufacturing/tablets", title: "Tablet Manufacturing", description: "Coated, layered, chewable and effervescent formats.", image: tablets },
-          { to: "/custom-products/custom-packaging", title: "Custom Packaging", description: "Bottles, cartons, films, pouches — designed and sourced in-house.", image: packaging },
+          { to: "/custom-products/custom-packaging", title: "Custom Packaging", description: "Bottles, cartons, films, pouches, designed and sourced internally.", image: packaging },
         ]}
       />
 

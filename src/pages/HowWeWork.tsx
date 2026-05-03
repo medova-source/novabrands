@@ -5,11 +5,11 @@ import CTASection from "@/components/CTASection";
 
 const phases = [
   { num: "01", title: "Project Kickoff", desc: "We meet your team, align on brand vision, target consumer, regulatory pathway and commercial goals. You leave the kickoff with a single named operator." },
-  { num: "02", title: "Product Evaluation", desc: "Our formulators audit your concept — ingredient feasibility, claim substantiation, format fit, COGS targets and time-to-market." },
-  { num: "03", title: "Feasibility Analysis", desc: "We model raw material availability, regulatory constraints, packaging architecture and shelf-life expectations against your timeline." },
-  { num: "04", title: "R&D & Sampling", desc: "PhD-led formulation, sensory iteration and stability work. You receive labeled samples and an open dialogue with the bench team." },
+  { num: "02", title: "Product Evaluation", desc: "Our formulators audit your concept, including ingredient feasibility, claim substantiation, format fit, COGS targets and time to market." },
+  { num: "03", title: "Feasibility Analysis", desc: "We model raw material availability, regulatory constraints, packaging architecture and shelf life expectations against your timeline." },
+  { num: "04", title: "R&D & Sampling", desc: "PhD led formulation, sensory iteration and stability work. You receive labeled samples and an open dialogue with the bench team." },
   { num: "05", title: "Manufacturing Timeline", desc: "An average 8–10 week run from approved formula and packaging to palletized finished goods, with traceable batch documentation." },
-  { num: "06", title: "Full-Cycle Production & Delivery", desc: "Raw material sourcing, manufacturing, co-packing, finished QC, warehousing and 3PL fulfillment — all under one roof." },
+  { num: "06", title: "Complete Cycle Production & Delivery", desc: "Raw material sourcing, manufacturing, co packing, finished QC, warehousing and 3PL fulfillment, all under one roof." },
 ];
 
 const HowWeWork = () => (

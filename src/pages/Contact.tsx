@@ -46,7 +46,7 @@ const Contact = () => {
       <PageHero
         eyebrow="Contact"
         title={<>Start your project. <br/><span className="text-muted-foreground">We'll take it from here.</span></>}
-        description="Tell us about your formula, packaging and timeline. A senior team member — not a sales rep — will respond within one business day."
+        description="Tell us about your formula, packaging and timeline. A senior team member, not a sales rep, will respond within one business day."
       />
 
       <section className="border-t border-[hsl(var(--rule))] bg-background">

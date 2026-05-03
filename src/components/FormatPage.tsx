@@ -51,9 +51,9 @@ const FormatPage = ({ data }: { data: FormatPageData }) => (
       <div className="container-x py-24 md:py-32">
         <div className="grid gap-6 md:grid-cols-3">
           {[
-            { icon: Factory, t: "Large Production Capacity", d: "High-throughput lines built to scale from launch quantities into millions of units." },
-            { icon: Sliders, t: "Full Customization", d: "Every variable — formula, sensory, dosage, format — engineered to your spec." },
-            { icon: PackageIcon, t: "Custom Packaging", d: "In-house packaging studio designs, sources and runs your primary and secondary." },
+            { icon: Factory, t: "Large Production Capacity", d: "High throughput lines built to scale from launch quantities into millions of units." },
+            { icon: Sliders, t: "Full Customization", d: "Every variable, including formula, sensory, dosage and format, engineered to your spec." },
+            { icon: PackageIcon, t: "Custom Packaging", d: "Internal packaging studio designs, sources and runs your primary and secondary." },
           ].map((c, i) => (
             <Reveal key={c.t} delay={i * 0.08}>
               <div className="card-sharp h-full p-8">

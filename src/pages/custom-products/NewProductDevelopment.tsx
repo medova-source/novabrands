@@ -15,7 +15,7 @@ const formats = [
   { label: "Gummies", img: gummies, desc: "Work with our team to create a unique gummy, formulated exactly to your specifications and efficacy goals." },
   { label: "Capsules", img: capsules, desc: "Develop premium capsules with custom ingredient blends, engineered for optimal absorption and stability." },
   { label: "Liquids", img: liquids, desc: "Create potent liquid formulas and tinctures with exceptional flavor profiles and rapid delivery systems." },
-  { label: "Tablets", img: tablets, desc: "Manufacture precision-dosed tablets available in chewable, coated, effervescent, and layered formats." },
+  { label: "Tablets", img: tablets, desc: "Manufacture precisely dosed tablets available in chewable, coated, effervescent, and layered formats." },
   { label: "Powders", img: powders, desc: "Formulate highly soluble powders with custom flavoring, perfect for stick packs, jars, and bulk formats." },
   { label: "& More", img: production, desc: "Explore specialized delivery systems and innovative manufacturing solutions tailored to your unique brand." },
 ];
@@ -56,13 +56,13 @@ const NewProductDevelopment = () => (
     <PageHero
       eyebrow="Custom Products · NPD"
       title={<>New Product Development. <br/><span className="text-muted-foreground">From idea to icon.</span></>}
-      description="An end-to-end studio for founders building the next generation of wellness brands. Formula, format, packaging, proof — built and shipped under one accountable team."
+      description="A complete studio for founders building the next generation of wellness brands. Formula, format, packaging, proof, all built and shipped under one accountable team."
     />
 
     {/* Section 1: Formats */}
     <section className="border-t border-[hsl(var(--rule))] bg-secondary">
       <div className="container-x py-24 md:py-32">
-        <Reveal><div className="eyebrow">Section 01 — Product Formats</div></Reveal>
+        <Reveal><div className="eyebrow">Section 01 : Product Formats</div></Reveal>
         <Reveal delay={0.1}><h2 className="display-2 mt-6 max-w-3xl">Pick a format. We'll build the science.</h2></Reveal>
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {formats.map((f, i) => (
@@ -84,11 +84,11 @@ const NewProductDevelopment = () => (
 
     <ImageBlock
       img={lab}
-      eyebrow="Section 02 — Development Process"
+      eyebrow="Section 02 : Development Process"
       title="A scientific path from concept to confidence."
       items={[
         { t: "Ideation & Formulation", d: "Brief, ingredient strategy, claim mapping and target consumer alignment." },
-        { t: "Research & Development", d: "PhD-led bench work — actives, excipients, sensory and stability." },
+        { t: "Research & Development", d: "PhD led bench work, including actives, excipients, sensory and stability." },
         { t: "Sampling & Iteration", d: "Labeled samples, structured feedback loops, rapid revision cycles." },
         { t: "Quality Approval", d: "Spec lock, master batch record, regulatory & label review." },
       ]}
@@ -96,26 +96,26 @@ const NewProductDevelopment = () => (
 
     <ImageBlock
       img={packaging}
-      eyebrow="Section 03 — Product Commercialization"
+      eyebrow="Section 03 : Product Commercialization"
       title="Where the brand becomes a product."
       reverse={true}
       items={[
-        { t: "Packaging Ideation & Design", d: "Studio-led structural and graphic design built around your brand world." },
-        { t: "Proof Review & Design Approval", d: "Press-accurate proofs, dieline validation and shelf-impact review." },
-        { t: "Final Product Review", d: "First-article inspection, sensory sign-off, regulatory check." },
-        { t: "Product Completion", d: "Approved master, ready for full-scale manufacturing." },
+        { t: "Packaging Ideation & Design", d: "Studio led structural and graphic design built around your brand world." },
+        { t: "Proof Review & Design Approval", d: "Accurate press proofs, dieline validation and shelf impact review." },
+        { t: "Final Product Review", d: "First article inspection, sensory approval, regulatory check." },
+        { t: "Product Completion", d: "Approved master, ready for full scale manufacturing." },
       ]}
     />
 
     <ImageBlock
       img={production}
-      eyebrow="Section 04 — Product Manufacturing"
+      eyebrow="Section 04 : Product Manufacturing"
       title="One facility, the whole production stack."
       items={[
-        { t: "Raw & Packaging Material Sourcing", d: "Vetted, multi-sourced supply chain with full identity testing." },
-        { t: "Formula Manufacturing", d: "GMP runs with in-process verification and traceable batch records." },
-        { t: "Co-Packing", d: "Fills, secondary packaging, kitting, gift sets and bundles." },
-        { t: "Fulfillment", d: "Direct hand-off to our integrated 3PL — no inter-facility transfers." },
+        { t: "Raw & Packaging Material Sourcing", d: "Vetted, multiple source supply chain with full identity testing." },
+        { t: "Formula Manufacturing", d: "GMP runs with in process verification and traceable batch records." },
+        { t: "Co Packing", d: "Fills, secondary packaging, kitting, gift sets and bundles." },
+        { t: "Fulfillment", d: "Direct hand off to our integrated 3PL, with no between facility transfers." },
       ]}
     />
 
