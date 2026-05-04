@@ -33,7 +33,7 @@ const About = () => (
               finger pointing and lost weeks. We took the opposite approach.
             </p>
             <p>
-              Under one roof, Nova Brands operates an FDA registered GMP
+              Under one roof, Nova Brands operates a state-of-the-art GMP
               facility, an internal R&D lab, a packaging design studio and an
               integrated 3PL. One team owns your timeline from whiteboard to
               consumer.

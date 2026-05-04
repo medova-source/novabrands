@@ -16,7 +16,7 @@ const accordion = [
   { t: "Next Generation Equipment", d: "High throughput encapsulators, pectin gummy lines, agglomerators, fluid bed dryers, automated tablet presses, aseptic liquid fillers and inline vision systems." },
   { t: "High Volume Capacities", d: "Capacity for 180M+ units annually across formats, with surge capability for promotional and seasonal launches." },
   { t: "Comprehensive Warehousing", d: "Climate controlled raw material, in process and finished goods storage with lot tracked, expiry aware inventory." },
-  { t: "Highest Levels of Quality", d: "FDA registered, cGMP 21 CFR 111 & 117 compliant, NSF audited, with independent finished testing on every batch." },
+  { t: "Highest Levels of Quality", d: "ISO certified, cGMP 21 CFR 111 & 117 compliant, NSF audited, with independent finished testing on every batch." },
   { t: "Diverse Product Range", d: "Extensive manufacturing capabilities across gummies, capsules, tablets, powders, and liquids to support comprehensive brand portfolios." },
   { t: "Integrated Supply Chain", d: "Multiple source ingredient strategy, audited vendors and integrated packaging procurement for resilience and speed." },
 ];
@@ -29,7 +29,7 @@ const Manufacturing = () => {
       <PageHero
         eyebrow="Manufacturing Capabilities"
         title={<>One facility. <br/><span className="text-muted-foreground">Five formats. Zero handoffs.</span></>}
-        description="An FDA registered, cGMP certified manufacturing platform with high capacity production lines, advanced labs and an integrated packaging and 3PL operation."
+        description="A state-of-the-art, cGMP certified manufacturing platform with high capacity production lines, advanced labs and an integrated packaging and 3PL operation."
         image={facility}
       />
 

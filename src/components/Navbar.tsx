@@ -10,7 +10,7 @@ const customProducts = [
 ];
 
 const capabilities = [
-  { to: "/manufacturing", label: "Overview", desc: "FDA registered GMP facility." },
+  { to: "/manufacturing", label: "Overview", desc: "ISO certified GMP facility." },
   { to: "/manufacturing/gummies", label: "Gummies", desc: "Pectin & gelatin formats." },
   { to: "/manufacturing/capsules", label: "Capsules", desc: "Veggie, gel & specialty." },
   { to: "/manufacturing/tablets", label: "Tablets", desc: "Coated, layered, chewable." },

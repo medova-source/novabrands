@@ -84,7 +84,7 @@ const Index = () => {
               ["180M+", "Units / year capacity"],
               ["8–10 wk", "Concept to commercial"],
               ["5", "Manufacturing formats"],
-              ["FDA · cGMP", "Audited & registered"],
+              ["ISO · cGMP", "Audited & certified"],
             ].map(([n, l]) => (
               <div key={l}>
                 <div className="bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--accent))] bg-clip-text font-display text-3xl font-semibold tracking-tight text-transparent md:text-4xl">{n}</div>
@@ -168,7 +168,7 @@ const Index = () => {
             </Reveal>
             <div className="mt-10 grid grid-cols-2 gap-6">
               {[
-                ["FDA Registered", "Facility & process"],
+                ["ISO Certified", "Facility & process"],
                 ["cGMP Certified", "21 CFR 111 & 117"],
                 ["NSF / GMP", "Independent audits"],
                 ["Allergen Controlled", "Segregated lines"],
