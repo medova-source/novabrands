@@ -15,8 +15,8 @@ const Contact = () => {
       <section className="border-t border-[hsl(var(--rule))] bg-background">
         <div className="container-x py-24 md:py-32 flex justify-center">
           <Reveal className="max-w-xl w-full">
-            <div className="eyebrow text-center">Direct line</div>
-            <h2 className="display-3 mt-6 text-center">Talk to a real operator.</h2>
+            <div className="eyebrow text-center">Contact</div>
+            <h2 className="display-3 mt-6 text-center">Get in touch with our team.</h2>
             <div className="mt-16 flex flex-col items-center gap-4 border-t border-[hsl(var(--rule))] pt-12">
               <Mail className="h-6 w-6 text-[hsl(var(--steel))]" />
               <div className="text-center">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import Logo from "./Logo";
 
 const Footer = () => {
@@ -131,16 +131,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-20 grid gap-6 border-t border-white/10 pt-8 md:grid-cols-3">
+        <div className="mt-20 border-t border-white/10 pt-8">
           <div className="flex items-center gap-3 text-[13px] text-white/70">
-            <Mail className="h-4 w-4 text-white/40" /> hello@novabrands.com
-          </div>
-          <div className="flex items-center gap-3 text-[13px] text-white/70">
-            <Phone className="h-4 w-4 text-white/40" /> +1 (888) 555-0142
-          </div>
-          <div className="flex items-center gap-3 text-[13px] text-white/70">
-            <MapPin className="h-4 w-4 text-white/40" /> 1200 Industrial Pkwy,
-            Salt Lake City, UT
+            <Mail className="h-4 w-4 text-white/40" /> Novabrandsatl@gmail.com
           </div>
         </div>
 
