@@ -7,8 +7,6 @@ build/
 out/
 
 # Environment variables
-.env
-.env.local
 .env.*.local
 
 # System files
@@ -47,3 +45,4 @@ package-lock.json
 
 # Images/Assets (if dynamically generated)
 public/uploads/
+config.bat

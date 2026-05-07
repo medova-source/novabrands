@@ -113,6 +113,18 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
   }, [location.pathname]);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
@@ -189,9 +201,9 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div
-        className={`fixed inset-0 z-50 bg-background transition-opacity duration-500 lg:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`}
+        className={`fixed inset-0 z-50 flex flex-col bg-background transition-opacity duration-500 lg:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`}
       >
-        <div className="flex h-16 items-center justify-between px-6 md:h-20 md:px-10">
+        <div className="flex shrink-0 h-16 items-center justify-between px-6 md:h-20 md:px-10">
           <Logo />
           <button
             onClick={() => setOpen(false)}
@@ -201,7 +213,7 @@ const Navbar = () => {
             <X className="h-4 w-4" />
           </button>
         </div>
-        <div className="container-x grid gap-1 py-6">
+        <div className="container-x grid gap-1 py-6 overflow-y-auto flex-1">
           <Link
             to="/"
             className="py-2 text-2xl font-display font-semibold tracking-tight"
