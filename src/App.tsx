@@ -15,6 +15,7 @@ import CustomManufacturing from "./pages/custom-products/CustomManufacturing.tsx
 import CustomPackaging from "./pages/custom-products/CustomPackaging.tsx";
 import Manufacturing from "./pages/manufacturing/Manufacturing.tsx";
 import { Gummies, Capsules, Tablets, Powders, Liquids } from "./pages/manufacturing/FormatPages.tsx";
+import Tobacco from "./pages/manufacturing/Tobacco.tsx";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/manufacturing/tablets" element={<Tablets />} />
           <Route path="/manufacturing/powders" element={<Powders />} />
           <Route path="/manufacturing/liquids" element={<Liquids />} />
+          <Route path="/manufacturing/tobacco" element={<Tobacco />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

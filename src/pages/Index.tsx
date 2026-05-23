@@ -15,6 +15,7 @@ import liquids from "@/assets/cat-liquids.jpg";
 import tablets from "@/assets/cat-tablets.jpg";
 import packaging from "@/assets/packaging.jpg";
 import rdLab from "@/assets/rd-lab.jpg";
+import tobacco from "@/assets/tob01.jpeg";
 
 const services = [
   { icon: Sparkles, title: "New Product Development", desc: "From concept to commercial launch, including formula, flavor, format, and proof.", to: "/custom-products/new-product-development" },
@@ -191,13 +192,14 @@ const Index = () => {
       {/* MANUFACTURING CATEGORIES */}
       <CategoryGrid
         eyebrow="Manufacturing capabilities"
-        title="Five formats. One facility."
+        title="Six formats. One facility."
         items={[
           { to: "/manufacturing/gummies", title: "Gummy Manufacturing", description: "Pectin & gelatin, low sugar systems, sour coatings and 3D molds.", image: gummies },
           { to: "/manufacturing/capsules", title: "Capsule Manufacturing", description: "Vegetarian, gelatin, liquid fill and beadlet specialty formats.", image: capsules },
           { to: "/manufacturing/powders", title: "Powder Manufacturing", description: "Stick packs, jars and bulk, agglomerated for clean dissolution.", image: powders },
           { to: "/manufacturing/liquids", title: "Liquid Manufacturing", description: "Tinctures, shots, syrups and dropper bottle systems.", image: liquids },
           { to: "/manufacturing/tablets", title: "Tablet Manufacturing", description: "Coated, layered, chewable and effervescent formats.", image: tablets },
+          { to: "/manufacturing/tobacco", title: "Tobacco & Nicotine", description: "Cigars, hookah, roll-your-own and custom vape alternative nicotine products.", image: tobacco },
           { to: "/custom-products/custom-packaging", title: "Custom Packaging", description: "Bottles, cartons, films, pouches, designed and sourced internally.", image: packaging },
         ]}
       />

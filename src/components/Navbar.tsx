@@ -52,6 +52,11 @@ const capabilities = [
     label: "Liquids",
     desc: "Tinctures, shots & syrups.",
   },
+  {
+    to: "/manufacturing/tobacco",
+    label: "Tobacco & Nicotine",
+    desc: "Cigars, hookah, vape & loose leaf.",
+  },
 ];
 
 const NavDropdown = ({

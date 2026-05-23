@@ -104,6 +104,14 @@ const Footer = () => {
                     Liquids
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="hover:text-white"
+                    to="/manufacturing/tobacco"
+                  >
+                    Tobacco & Nicotine
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>

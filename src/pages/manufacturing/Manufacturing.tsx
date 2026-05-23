@@ -11,6 +11,7 @@ import capsules from "@/assets/cat-capsules.jpg";
 import powders from "@/assets/cat-powders.jpg";
 import liquids from "@/assets/cat-liquids.jpg";
 import tablets from "@/assets/cat-tablets.jpg";
+import tobacco from "@/assets/tob01.jpeg";
 
 const accordion = [
   { t: "Next Generation Equipment", d: "High throughput encapsulators, pectin gummy lines, agglomerators, fluid bed dryers, automated tablet presses, aseptic liquid fillers and inline vision systems." },
@@ -101,6 +102,7 @@ const Manufacturing = () => {
           { to: "/manufacturing/tablets", title: "Tablets", description: "Coated, layered, chewable, effervescent and orally disintegrating.", image: tablets },
           { to: "/manufacturing/powders", title: "Powders", description: "Stick packs, jars, bulk, agglomerated for clean dissolution.", image: powders },
           { to: "/manufacturing/liquids", title: "Liquids", description: "Tinctures, shots, syrups and dropper bottle systems.", image: liquids },
+          { to: "/manufacturing/tobacco", title: "Tobacco & Nicotine", description: "Cigars, hookah, roll-your-own, custom paper wraps & vape alternatives.", image: tobacco },
         ]}
       />
 
