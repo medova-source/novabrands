@@ -129,7 +129,7 @@ const Tobacco = () => (
         </div>
 
         <div className="grid gap-24">
-          {segments.map((seg, i) => {
+          {segments?.map((seg, i) => {
             const isEven = i % 2 === 0;
             return (
               <div key={seg.title} className="grid gap-12 md:grid-cols-12 md:items-center">
@@ -139,7 +139,7 @@ const Tobacco = () => (
                     <img
                       src={seg.image}
                       alt={seg.title}
-                      className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-105"
+                      className="h-full w-full object-contain transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-105"
                       loading="lazy"
                     />
                   </div>
