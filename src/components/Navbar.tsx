@@ -131,82 +131,84 @@ const Navbar = () => {
   }, [open]);
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-background/85 backdrop-blur-xl border-b border-[hsl(var(--rule))]"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="container-x flex h-16 items-center justify-between md:h-20">
-        <Logo light={isDarkNav} />
+    <>
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+          scrolled
+            ? "bg-background/85 backdrop-blur-xl border-b border-[hsl(var(--rule))]"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="container-x flex h-16 items-center justify-between md:h-20">
+          <Logo light={isDarkNav} />
 
-        <nav className="hidden items-center gap-8 lg:flex">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `text-[13px] font-medium transition-colors ${isActive ? (!isDarkNav ? "text-foreground" : "text-white") : !isDarkNav ? "text-foreground/80 hover:text-foreground" : "text-white/80 hover:text-white"}`
-            }
-          >
-            Home
-          </NavLink>
-          <NavDropdown
-            label="Custom Products"
-            items={customProducts}
-            isDarkNav={isDarkNav}
-          />
-          <NavDropdown
-            label="Manufacturing"
-            items={capabilities}
-            isDarkNav={isDarkNav}
-          />
-          <NavLink
-            to="/distribution"
-            className={({ isActive }) =>
-              `text-[13px] font-medium transition-colors ${isActive ? (!isDarkNav ? "text-foreground" : "text-white") : !isDarkNav ? "text-foreground/80 hover:text-foreground" : "text-white/80 hover:text-white"}`
-            }
-          >
-            3PL Distribution
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `text-[13px] font-medium transition-colors ${isActive ? (!isDarkNav ? "text-foreground" : "text-white") : !isDarkNav ? "text-foreground/80 hover:text-foreground" : "text-white/80 hover:text-white"}`
-            }
-          >
-            About
-          </NavLink>
-          <NavLink
-            to="/how-we-work"
-            className={({ isActive }) =>
-              `text-[13px] font-medium transition-colors ${isActive ? (!isDarkNav ? "text-foreground" : "text-white") : !isDarkNav ? "text-foreground/80 hover:text-foreground" : "text-white/80 hover:text-white"}`
-            }
-          >
-            How We Work
-          </NavLink>
-        </nav>
+          <nav className="hidden items-center gap-8 lg:flex">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `text-[13px] font-medium transition-colors ${isActive ? (!isDarkNav ? "text-foreground" : "text-white") : !isDarkNav ? "text-foreground/80 hover:text-foreground" : "text-white/80 hover:text-white"}`
+              }
+            >
+              Home
+            </NavLink>
+            <NavDropdown
+              label="Custom Products"
+              items={customProducts}
+              isDarkNav={isDarkNav}
+            />
+            <NavDropdown
+              label="Manufacturing"
+              items={capabilities}
+              isDarkNav={isDarkNav}
+            />
+            <NavLink
+              to="/distribution"
+              className={({ isActive }) =>
+                `text-[13px] font-medium transition-colors ${isActive ? (!isDarkNav ? "text-foreground" : "text-white") : !isDarkNav ? "text-foreground/80 hover:text-foreground" : "text-white/80 hover:text-white"}`
+              }
+            >
+              3PL Distribution
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `text-[13px] font-medium transition-colors ${isActive ? (!isDarkNav ? "text-foreground" : "text-white") : !isDarkNav ? "text-foreground/80 hover:text-foreground" : "text-white/80 hover:text-white"}`
+              }
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/how-we-work"
+              className={({ isActive }) =>
+                `text-[13px] font-medium transition-colors ${isActive ? (!isDarkNav ? "text-foreground" : "text-white") : !isDarkNav ? "text-foreground/80 hover:text-foreground" : "text-white/80 hover:text-white"}`
+              }
+            >
+              How We Work
+            </NavLink>
+          </nav>
 
-        <div className="flex items-center gap-3">
-          <Link
-            to="/contact"
-            className={`hidden md:inline-flex btn-primary !py-2.5 !px-5 !text-[13px] ${isDarkNav ? "bg-[hsl(var(--primary))] text-white hover:bg-[hsl(var(--primary))]/90 shadow-[0_4px_20px_rgb(0,156,254,0.3)]" : "bg-[hsl(var(--primary))] text-white hover:bg-[hsl(var(--primary))]/90"}`}
-          >
-            Contact Us
-            <ArrowUpRight className="h-4 w-4" />
-          </Link>
-          <button
-            onClick={() => setOpen(true)}
-            className={`grid h-10 w-10 place-items-center rounded-full border lg:hidden ${!isDarkNav ? "border-[hsl(var(--rule))] text-foreground" : "border-white/20 text-white"}`}
-            aria-label="Open menu"
-          >
-            <Menu className="h-4 w-4" />
-          </button>
+          <div className="flex items-center gap-3">
+            <Link
+              to="/contact"
+              className={`hidden md:inline-flex btn-primary !py-2.5 !px-5 !text-[13px] ${isDarkNav ? "bg-[hsl(var(--primary))] text-white hover:bg-[hsl(var(--primary))]/90 shadow-[0_4px_20px_rgb(0,156,254,0.3)]" : "bg-[hsl(var(--primary))] text-white hover:bg-[hsl(var(--primary))]/90"}`}
+            >
+              Contact Us
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
+            <button
+              onClick={() => setOpen(true)}
+              className={`grid h-10 w-10 place-items-center rounded-full border lg:hidden ${!isDarkNav ? "border-[hsl(var(--rule))] text-foreground" : "border-white/20 text-white"}`}
+              aria-label="Open menu"
+            >
+              <Menu className="h-4 w-4" />
+            </button>
+          </div>
         </div>
-      </div>
+      </header>
 
       {/* Mobile menu */}
       <div
-        className={`fixed inset-0 z-50 flex flex-col bg-background transition-opacity duration-500 lg:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`}
+        className={`fixed inset-0 z-[100] flex flex-col bg-background transition-opacity duration-500 lg:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`}
       >
         <div className="flex shrink-0 h-16 items-center justify-between px-6 md:h-20 md:px-10">
           <Logo />
@@ -269,7 +271,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-    </header>
+    </>
   );
 };
 
