@@ -20,7 +20,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Editor folders/files
-.vscode/
 .idea/
 *.swp
 
@@ -46,3 +45,6 @@ package-lock.json
 # Images/Assets (if dynamically generated)
 public/uploads/
 config.bat
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
