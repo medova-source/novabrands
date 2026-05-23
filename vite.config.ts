@@ -11,8 +11,20 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react()].filter(Boolean),
-   build: {
+  plugins: [
+    react(),
+    {
+      name: "force-close",
+      closeBundle() {
+        if (mode === "production") {
+          setTimeout(() => {
+            process.exit(0);
+          }, 100);
+        }
+      },
+    },
+  ].filter(Boolean),
+  build: {
     chunkSizeWarningLimit: 1000,
   },
   resolve: {
