@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 import { Factory, Sliders, Package as PackageIcon, ShieldCheck, Globe2, Truck, Users } from "lucide-react";
 
 import tob01 from "@/assets/tob01.jpeg";
-import tob02 from "@/assets/tob02.jpeg";
+import tob02 from "@/assets/tob05.png";
 import tob03 from "@/assets/tob03.jpeg";
 import tob04 from "@/assets/tob04.jpeg";
 
